@@ -1,321 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css">
-    <title>Demo HTML para Estudiantes</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo HTML para Estudiantes</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
   <button id="btnVolverArriba" title="Volver arriba">↑</button>
 
-  <body>
-    
-    <header>
-      <h1>¡Bienvenido a Fitcat!</h1>
-      <nav>
-        <ul type="none">
-          <li><a href="#sesiones">Entrenamiento</a></li>
-          <li><a href="#ejercicios">Ejercicios</a></li>
-          <li><a href="#errores">Errores comunes</a></li>
-          <li><a href="#nutricion">Nutrición</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <h1 class="titulo-logo">
+      <img src="img/logo.png" alt="Logo Fitcat" class="logo">
+      Fitcat | guía para recién iniciados en el gimnasio
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#sesiones">Entrenamiento</a></li>
+        <li><a href="#ejercicios">Ejercicios</a></li>
+        <li><a href="#errores">Errores comunes</a></li>
+        <li><a href="#nutricion">Nutrición</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="presentacion" class="pantalla">
-        <div class="contenido-presentacion-flex">
-      
-          <div class="contenido-presentacion">
-            <h1>Bienvenido a Fitcat</h1>
-            <p>
-              Frecuentemente nos encontramos ante la situación de querer mejorar nuestra salud y bienestar, pero no sabemos por dónde empezar.
-              En redes sociales vemos a personas que han conseguido resultados espectaculares pero no mencionan cómo se consigue, ni por dónde empezar, 
-              siendo muy frustrante para la mayoría de las personas que nunca han practicado deporte o que llevan mucho tiempo sin hacerlo.
-            </p>
-            <p>
-              En esta página te ayudaremos a dar tus primeros pasos en el mundo del fitness, y a que puedas conseguir tus objetivos de forma segura y efectiva.
-              Accede a los diversos recursos y descubre cómo utilizar el ejercicio físico para cambiar tu vida.
-            </p>
-          </div>
-      
-          <div class="galeria">
-            <img src="img/gim1.jpeg" alt="Imagen 1">
-            <img src="img/gim3.jpg" alt="Imagen 3">
-            <img src="img/gim2.jpg" alt="Imagen 2">
-        
-          </div>
-      
+  <section id="presentacion" class="pantalla">
+    <div class="contenido-presentacion-flex">
+      <div class="contenido-presentacion">
+        <h2>Bienvenido a Fitcat</h2>
+        <p>Frecuentemente nos encontramos ante la situación de querer mejorar nuestra salud y bienestar, pero no sabemos por dónde empezar. En redes sociales vemos a personas que han conseguido resultados espectaculares pero no mencionan cómo se consigue, ni por dónde empezar, siendo muy frustrante para la mayoría de las personas que nunca han practicado deporte o que llevan mucho tiempo sin hacerlo.</p>
+        <p>En esta página te ayudaremos a dar tus primeros pasos en el mundo del fitness, y a que puedas conseguir tus objetivos de forma segura y efectiva. Accede a los diversos recursos y descubre cómo utilizar el ejercicio físico para cambiar tu vida.</p>
+      </div>
+      <div class="galeria">
+        <img src="img/gim1.jpeg" alt="Imagen 1">
+        <img src="img/gim3.jpg" alt="Imagen 3">
+        <img src="img/gim2.jpg" alt="Imagen 2">
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="sesiones">
+      <h2>Sesiones de Entrenamiento</h2>
+      <p>El entrenamiento es clave para alcanzar tus objetivos.</p>
+      <p>Aquí te mostramos cómo estructurar tus sesiones.</p>
+      <h3>Cómo enfocar tus sesiones en función de tus objetivos</h3>
+
+      <div class="sesion-bloque">
+        <div class="texto-sesion">
+          <h4>Ganar Masa Muscular</h4>
+          <ul>
+            <li>Enfócate en ejercicios compuestos como sentadillas, peso muerto y press de banca. Usa pesos que te permitan hacer pocas repeticiones (6–8).</li>
+            <li>Los ejercicios compuestos involucran muchos grupos musculares.</li>
+            <li>Además, son ejercicios en los que puedes progresar rápidamente.</li>
+            <li>Descansa entre series 2–3 minutos.</li>
+            <li>Combínalos con ejercicios de hipertrofia (8–12 reps).</li>
+            <li>Aplica sobrecarga progresiva.</li>
+          </ul>
         </div>
-      </section>
-      
-    <main>
-        <section id="sesiones">
-            <h2>Sesiones de Entrenamiento</h2>
-            <p>El entrenamiento es clave para alcanzar tus objetivos.</p>
-            <p>Aquí te mostramos cómo estructurar tus sesiones.</p>
-          
-            <h3>Cómo enfocar tus sesiones en función de tus objetivos</h3>
-          
-            <div class="sesion-bloque">
-                <div class="texto-sesion">
-                  <h4>Ganar Masa Muscular</h4>
-                  <ul>
-                    <li>Enfócate en ejercicios compuestos como sentadillas, peso muerto y press de banca. Usa pesos que te permitan hacer pocas repeticiones (6–8).</li>
-                    <li>Los ejercicios compuestos involucran muchos grupos musculares, permitiéndote ganar fuerza muscular y articular.</li>
-                    <li>Además, son ejercicios en los que puedes progresar rápidamente, lo cual te ayudará a motivarte.</li>
-                    <li>El descanso entre series, a diferencia de la creencia popular, debe ser generoso, de entre 2–3 minutos.</li>
-                    <li>Un descanso ineficiente aumenta la fatiga y empeora el rendimiento en el siguiente ejercicio.</li>
-                    <li>Recuerda que el descanso es parte del entrenamiento, y no un tiempo perdido.</li>
-                    <li>Combínalo con ejercicios en rango de hipertrofia (8–12 repeticiones) para un desarrollo muscular completo.</li>
-                    <li>No todos los ejercicios deben ser extenuantes. La sobrecarga progresiva es clave para el crecimiento muscular.</li>
-                    <li>Si no puedes hacer 8 repeticiones, reduce el peso. Si puedes hacer más de 12, aumenta el peso.</li>
-                  </ul>
-                </div>
-                <img src="img/masamuscular.jpg" alt="Ganar masa muscular" />
-            </div>
-              
-          
-            <div class="sesion-bloque">
-            <div class="texto-sesion">
-                  <h4>Pérdida de grasa</h4>
-                  <ul>
-                <li>Además de ejercicios para ganar masa muscular (que ayudará a consumir más calorías), incorpora entrenamiento en circuito (como HIIT).</li>
-                    <li>Los ejercicios de alta intensidad son ideales para quemar calorías y mejorar la resistencia cardiovascular.</li>
-                    <li>Realiza ejercicios de cuerpo completo, como burpees, saltos y kettlebell swings.</li>    
-                    <li>Mantente activo, intenta caminar al menos 10.000 pasos al día.</li>
-                    <li>Evita largos periodos de sedentarismo, incluso pequeñas caminatas frecuentes ayudan.</li>
-                    <li>Controla tu ingesta calórica y prioriza alimentos ricos en nutrientes, como frutas, verduras y proteínas magras.</li>
-                    <li>Duerme al menos 7-8 horas por noche para mantener tu metabolismo funcionando correctamente.</li>
-                  </ul>
-                </div>
-                <img src="img/perdidapeso.webp" alt="Bajar de peso">
-              </div>
-              
-          
-            <div class="sesion-bloque">
-              <div class="texto-sesion">
-                <h4>Mejorar Resistencia</h4>
-                <ul></ul>
-                <li>Realiza sesiones de cardio en función de tu objetivo.</li>
-                <li>Si recién empiezas, realiza 1-2 sesiones por semana.</li>
-                <li>Si eres un deportista con hábitos saludables, combina el entrenamiento en gimnasio con las sesiones de cardio específicas.</li>
-                <li>Realiza sesiones de 20-30 minutos de cardio moderado (correr, nadar, andar en bicicleta).</li>
-                <li>Varía la intensidad y duración de tus sesiones para evitar la adaptación.</li>
-                <li>Una vez consigas mejorar tus marcas y te sientas cómodo, prueba a incorporar entrenamiento de intervalos para mejorar tu resistencia y quema de grasa.</li>
-                </ul>
-              </div>
-              <img src="img/resistencia.jpeg" alt="Mejorar resistencia">
-            </div>
-          </section>
-          
-          <section id="ejercicios">
-            <h2>Ejercicios para cada grupo muscular</h2>
-          
-            <div class="fila-ejercicios">
-              <div class="ejercicio-bloque">
-                <h3>Pecho</h3>
-                <p>Con ejercicios como el press de banca, o sus homólogas flexiones, conseguiras desarrollar por completo tu pectoral</p>
-                <p class="tip">TIP: Empieza con poco peso hasta dominar la técnica. Si no consigues ni siquiera hacer flexiones, prueba a hacerlas con las rodillas en el suelo!</p>
+        <img src="img/masamuscular.jpg" alt="Ganar masa muscular">
+      </div>
 
-                <div class="galeria-ejercicio">
-                  <img src="img/bencpress.jpg" alt="Pecho">
-                  <img src="img/pushups.jpg" alt="Pecho">
-                </div>
-            </div>
-          
-            <div class="ejercicio-bloque">
-                <h3>Espalda</h3>
-                <p>Ejercicios como el remo con barra, las dominadas o jalones al pecho le daran una gran amplitud a tu espalda</p>
-                <p class="tip">TIP: Si las dominadas no son lo tuyo, ¡no te frustres! empieza con máquinas o polea</p>
-                <div class="galeria-ejercicio">
-                  <img src="img/dominadas.jpg" alt="Espalda">
-                  <img src="img/remobarra.jpg" alt="Espalda">
-                </div>
-              </div>
-            </div>
-          
-            <div class="fila-ejercicios">
-              <div class="ejercicio-bloque">
-                <h3>Piernas</h3>
-                <p>Las sentadillas, el peso muerto, o la prensa te ayudarán a ganar mucha fuerza en las piernas. Son los ejercicios más completos.</p>
-                <p class="tip">TIP: Empieza con poco peso hasta dominar la técnica. Puede parecer que no pesa, pero te puedes lesionar fácilmente</p>
-                <div class="galeria-ejercicio">
-                  <img src="img/deadlift.jpg" alt="Piernas">
-                  <img src="img/sentadilla.jpg" alt="Piernas">
-                </div>
-              </div>
-          
-              <div class="ejercicio-bloque">
-                <h3>Brazos</h3>
-                <p>Los mejores ejercicios para tus brazos son el curl de bíceps, las extensiones de tríceps y el press militar. ¡Pruébalos para ver como tus brazos se congestionan como nunca!</p>
-                <p class="tip">TIP: Aprovecha la gran variedad de mancuernas que hay en tu gimnasio para elegir el peso más adecuado</p>
-                <div class="galeria-ejercicio">
-                  <img src="img/curl.jpg" alt="Brazos">
-                  <img src="img/militar.jpg" alt="Brazos">
-                </div>
-              </div>
-            </div>
-          
-            <div class="fila-ejercicios">
-              <div class="ejercicio-bloque">
-                <h3>Abdominales</h3>
-                <p>Con el crunch abdominal, las elevaciones de piernas, y la famosísima y odiada a la vez que amada plancha, tus abdominales serán de hierro.</p>
-                <p class="tip">TIP: No sobreentrenes el abdominal! Con 2 veces por semana es más que suficiente </p>
-                <div class="galeria-ejercicio">
-                  <img src="img/abs.jpeg" alt="Abdominales">
-                  <img src="img/abs3.jpg" alt="Abdominales">
-                  <img src="img/abs2.jpg" alt="Abdominales">
-                 
-                </div>
-              </div>
-          
-              
-          </section>
-          
-          
+      <div class="sesion-bloque">
+        <div class="texto-sesion">
+          <h4>Pérdida de grasa</h4>
+          <ul>
+            <li>Entrenamiento en circuito (HIIT) y ejercicios compuestos.</li>
+            <li>Ejercicios como burpees, saltos, swings.</li>
+            <li>Camina al menos 10.000 pasos/día.</li>
+            <li>Evita largos periodos de sedentarismo.</li>
+            <li>Cuida tu alimentación y duerme 7-8h.</li>
+          </ul>
+        </div>
+        <img src="img/perdidapeso.webp" alt="Bajar de peso">
+      </div>
 
-        <section id="errores">
-            <h2>Errores comunes</h2>
-            <p>Es normal cometer errores al principio. Aquí te mostramos los más comunes para que los evites.</p>
-            <p>Recuerda que la práctica hace al maestro, y que lo importante es disfrutar del proceso.</p>
-            
-            <h3>1. Mala postura</h3>
-            <p> No ejecutar bien un ejercicio puede llevar a que se produzcan lesiones. ¡Es mejor utilizar poco peso y buena técnica!</p>
+      <div class="sesion-bloque">
+        <div class="texto-sesion">
+          <h4>Mejorar Resistencia</h4>
+          <ul>
+            <li>Haz cardio de 1-2 veces/semana si estás empezando.</li>
+            <li>Combina gimnasio con sesiones de cardio.</li>
+            <li>Prueba correr, nadar o bici 20–30 min.</li>
+            <li>Varía duración e intensidad.</li>
+            <li>Incluye intervalos de alta intensidad.</li>
+          </ul>
+        </div>
+        <img src="img/resistencia.jpeg" alt="Mejorar resistencia">
+      </div>
+    </section>
 
-            <h3>2. No calentar</h3>
-            <p> El calentamiento es fundamental para preparar los músculos y evitar lesiones. 
-                Dedica al menos 10 minutos a calentar de forma activa. Debe ser un calentamiento suave, que te permita notar esa activación muscular.</p>
+    <section id="ejercicios">
+      <h2>Ejercicios para cada grupo muscular</h2>
 
-            <h3>3. No descansar</h3>
-            <p>Aunque parezca mentira, tus músculos se construyen en el descanso. 
-                Con el ejercicio creamos las respuestas fisiológicas para que, cuando nuestro cuerpo se recupere, lo haga generando más masa muscular para adaptarse al ejercicio. 
-                Lento es el camino más rápido, ¡no te agobies si no ves resultados las primeras semanas!</p>
-            <h3>4. Sobreentrenamiento</h3>
-            <p>Después de ir unas semanas al gimnasio, es posible que tengas muchas ganas de entrenar, pensando que te has vuelto adicto.</p>
-            <p>Ve paso a paso. Roma no se construyó en un día. Respeta el volumen de entrenamiento y no entrenes de más. Más no es mejor</p>
-        </section>
-        
-        <section id="nutricion">
-            <h2>Nutrición básica  </h2>
-            <p> La nutrición es fundamental para alcanzar tus objetivos. 
-                Aquí te damos algunos consejos básicos para que puedas empezar a cuidar tu alimentación.</p>
-            <p>Recuerda que cada cuerpo es diferente y lo que funciona para uno puede no funcionar para otro. 
-                Lo importante es encontrar lo que mejor se adapte a ti y a tus necesidades.</p>
-            <p>Consulta a un nutricionista si tienes dudas o necesitas un plan específico.</p>
-            <p>Recuerda que la nutrición es un proceso continuo y que no hay soluciones rápidas. 
-                La clave es la constancia y la paciencia.</p>
-            <h3>La importancia de la nutrición</h3>
-                <p>Una correcta nutrición ayudará a maximizar tus resultados. </p>
-                <p>Una buena alimentación te ayudará a tener más energía, mejorar tu rendimiento y acelerar la recuperación.</p>
-                <p>Una dieta equilibrada es clave para mantener un peso saludable y prevenir enfermedades.</p>
-                <p>Una buena alimentación no solo se trata de perder peso, sino de nutrir tu cuerpo y darle lo que necesita para funcionar correctamente.</p>
-                <p>Una buena alimentación te ayudará a sentirte mejor, tener más energía y mejorar tu rendimiento físico.</p>
-        
+      <div class="fila-ejercicios">
+        <div class="ejercicio-bloque">
+          <h3>Pecho</h3>
+          <p>Con ejercicios como el press de banca o flexiones desarrollarás todo tu pectoral.</p>
+          <p class="tip">TIP: Empieza con poco peso o con flexiones de rodillas.</p>
+          <div class="galeria-ejercicio">
+            <img src="img/bencpress.jpg" alt="Pecho">
+            <img src="img/pushups.jpg" alt="Pecho">
+          </div>
+        </div>
 
-            <h3>¿Qué comer antes y después del ejercicio?</h3>
-            <p> Antes de entrenar, opta por carbohidratos complejos y proteínas magras. Como por ejemplo, arroz, patatas, avena, pollo o pescado.
-                Estos alimentos te proporcionarán energía sostenida y ayudarán a prevenir la fatiga muscular.
-                Después, consume una mezcla de proteínas y carbohidratos para la recuperación. Un batido de proteínas con plátano o un yogur con avena son buenas opciones.
-            </p>
+        <div class="ejercicio-bloque">
+          <h3>Espalda</h3>
+          <p>Remo con barra, dominadas o jalones al pecho.</p>
+          <p class="tip">TIP: Usa máquinas asistidas si estás empezando.</p>
+          <div class="galeria-ejercicio">
+            <img src="img/dominadas.jpg" alt="Espalda">
+            <img src="img/remobarra.jpg" alt="Espalda">
+          </div>
+        </div>
+      </div>
 
-            
-        </section>
-        
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p> ¡Ponte en contacto con nosotros para que te ayudemos a conseguir tus objetivos!</p>
-            <h2>Formulario de contacto</h2>
-            <form id="formulario">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required /><br><br>
+      <div class="fila-ejercicios">
+        <div class="ejercicio-bloque">
+          <h3>Piernas</h3>
+          <p>Sentadillas, peso muerto y prensa para ganar potencia.</p>
+          <p class="tip">TIP: Domina la técnica sin peso primero.</p>
+          <div class="galeria-ejercicio">
+            <img src="img/deadlift.jpg" alt="Piernas">
+            <img src="img/sentadilla.jpg" alt="Piernas">
+          </div>
+        </div>
 
-                <label for="nombre">Correo electrónico:</label><br>
-                <input type="text" id="correo" name="correo" required /><br><br>
+        <div class="ejercicio-bloque">
+          <h3>Brazos</h3>
+          <p>Curl de bíceps, extensiones y press militar.</p>
+          <p class="tip">TIP: Usa mancuernas de peso adecuado.</p>
+          <div class="galeria-ejercicio">
+            <img src="img/curl.jpg" alt="Brazos">
+            <img src="img/militar.jpg" alt="Brazos">
+          </div>
+        </div>
+      </div>
 
-                <label for="objetivo">¿Cuál es tu objetivo?</label><br>
-                <select id="objetivo" name="objetivo" required>
-                    <option value="">--Selecciona uno--</option>
-                    <option value="ganar_masa">Ganar Masa Muscular</option>
-                    <option value="bajar_peso">Bajar de Peso</option>
-                    <option value="mejorar_resistencia">Mejorar Resistencia</option>
-                </select><br><br>
-            
-            <label for="mensaje">Envíanos tus dudas o consultas:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+      <div class="fila-ejercicios">
+        <div class="ejercicio-bloque">
+          <h3>Abdominales</h3>
+          <p>Crunch, elevaciones de piernas y plancha.</p>
+          <p class="tip">TIP: No sobreentrenes. 2 veces/semana es suficiente.</p>
+          <div class="galeria-ejercicio">
+            <img src="img/abs.jpeg" alt="Abdominales">
+            <img src="img/abs3.jpg" alt="Abdominales">
+            <img src="img/abs2.jpg" alt="Abdominales">
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <button type="submit">Enviar</button>
-            </form>
+    <section id="errores">
+      <h2>Errores comunes</h2>
+      <p>Evita estos errores típicos al empezar:</p>
+      <h3>1. Mala postura</h3>
+      <p>Utiliza poco peso y buena técnica.</p>
 
-            <p id="mensaje-confirmacion"style="display:none; color: green; font-weight: bold; margin-top: 10px;">
-                ¡Formulario enviado con éxito!
-              </p>
-        </section>
+      <h3>2. No calentar</h3>
+      <p>Calienta 10 minutos antes de entrenar.</p>
 
-        <script>
-            function validarFormulario(event) {
-              event.preventDefault();
-          
-              const nombre = document.getElementById('nombre').value;
-              const email = document.getElementById('correo').value;
-              const mensaje = document.getElementById('mensaje').value;
-              const consulta = document.getElementById('objetivo').value;
-          
-              // Validación básica
-              if (nombre === "" || email === "" || mensaje === "" || consulta === "") {
-                alert("Todos los campos deben ser completados.");
-                return false;
-              }
-          
-              // Validación del correo
-              const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-              if (!regexEmail.test(email)) {
-                alert("Introduce un correo electrónico válido.");
-                return false;
-              }
-          
-              // Mostrar mensaje de éxito
-              document.getElementById('mensaje-confirmacion').style.display = 'block';
-              return false;
-            }
-          
-            document.getElementById('formulario').addEventListener('submit', validarFormulario);
-          </script>
-          
-      <section id="multimedia">
-        <h2>Contenido Multimedia</h2>
-        <video width="400" controls autoplay muted>
-          <source src="Presentación de la asignatura.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
-      </section>
-   
-    </main>
+      <h3>3. No descansar</h3>
+      <p>El músculo crece durante el descanso. Sé paciente.</p>
 
-    <footer>
-      <p>&copy; 2025 Demo HTML para Estudiantes</p>
-      <button onclick="alert('¡Hola, estudiante!')">Haz clic aquí</button>
-    </footer>
+      <h3>4. Sobreentrenamiento</h3>
+      <p>Más no es mejor. Respeta el volumen y descansa.</p>
+    </section>
 
-    <button id="btnVolverArriba" title="Volver arriba">↑</button>
-    <script>
-        const btnVolverArriba = document.getElementById("btnVolverArriba");
-      
-        window.onscroll = function () {
-          if (document.documentElement.scrollTop > 200) {
-            btnVolverArriba.style.display = "block";
-          } else {
-            btnVolverArriba.style.display = "none";
-          }
-        };
-      
-        btnVolverArriba.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        });
-      </script>
-      
-  </body>
+    <section id="nutricion">
+      <h2>Nutrición</h2>
+      <p>La nutrición es clave. Aquí algunos consejos:</p>
+      <h3>La importancia de la nutrición</h3>
+      <ul>
+        <li>Te da energía, mejora el rendimiento.</li>
+        <li>Evita enfermedades, ayuda a sentirte bien.</li>
+      </ul>
+      <h3>¿Qué comer antes y después del ejercicio?</h3>
+      <ul>
+        <li>Antes: carbohidratos y proteínas magras.</li>
+        <li>Después: mezcla de proteínas y carbos.</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¡Contáctanos para ayudarte!</p>
+      <form id="formulario">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="objetivo">¿Cuál es tu objetivo?</label><br>
+        <select id="objetivo" name="objetivo" required>
+          <option value="">--Selecciona uno--</option>
+          <option value="ganar_masa">Ganar Masa Muscular</option>
+          <option value="bajar_peso">Bajar de Peso</option>
+          <option value="mejorar_resistencia">Mejorar Resistencia</option>
+        </select><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <p id="mensaje-confirmacion" style="display:none; color: green; font-weight: bold;">¡Formulario enviado con éxito!</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FitCat | Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const btnVolverArriba = document.getElementById("btnVolverArriba");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 200) {
+        btnVolverArriba.style.display = "block";
+      } else {
+        btnVolverArriba.style.display = "none";
+      }
+    };
+
+    btnVolverArriba.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    document.getElementById('formulario').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+      const objetivo = document.getElementById('objetivo').value;
+
+      if (!nombre || !email || !mensaje || !objetivo) {
+        alert("Todos los campos deben estar completos.");
+        return;
+      }
+
+      const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regexEmail.test(email)) {
+        alert("Introduce un correo electrónico válido.");
+        return;
+      }
+
+      document.getElementById('mensaje-confirmacion').style.display = 'block';
+    });
+  </script>
+
+</body>
 </html>
