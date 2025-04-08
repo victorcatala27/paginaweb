@@ -109,5 +109,19 @@ body {
     border-left: 5px solid orange;
     padding-left: 10px;
   }
-  
-  
+
+html {
+    scroll-behavior:smooth;
+}
+
+img{
+    max: width 100%;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+input, select, textarea, button{
+    max-width:100%;
+    box-sizing: border-box;
+}
