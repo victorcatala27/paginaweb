@@ -13,7 +13,7 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #e70202;
     color: #000;
     line-height: 1.8;
 
@@ -58,7 +58,7 @@
   }
   
   nav ul li a:hover {
-    color: orange;
+    color: rgb(255, 0, 0);
   }
   
   /* CONTENIDO PRINCIPAL */
@@ -158,7 +158,7 @@
     }
   }
   .pantalla {
-    height: 100vh;
+    height: vh;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -282,6 +282,21 @@
   .fila-ejercicios .ejercicio-bloque {
     flex: 1 1 calc(50% - 10px); /* dos bloques por fila */
   }
+
+  #sesiones {
+    background-color: #fef6e4; 
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+  }
+  section {
+    background-color: #fef6e4;  /* Fondo uniforme */
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);  /* Sombra sutil */
+  }
+  
   
   
   

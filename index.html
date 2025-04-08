@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Demo HTML para Estudiantes</title>
   </head>
+  <button id="btnVolverArriba" title="Volver arriba">↑</button>
 
   <body>
     
@@ -48,8 +49,6 @@
         </div>
       </section>
       
-      
-
     <main>
         <section id="sesiones">
             <h2>Sesiones de Entrenamiento</h2>
@@ -59,23 +58,40 @@
             <h3>Cómo enfocar tus sesiones en función de tus objetivos</h3>
           
             <div class="sesion-bloque">
-              <div class="texto-sesion">
-                <h4>Ganar Masa Muscular</h4>
-                <p>Enfócate en ejercicios compuestos como sentadillas, peso muerto y press de banca. Usa pesos altos y pocas repeticiones (6–8).</p>
-                <p>Descanso entre series: 2-3 minutos.</p>
-                <p>Combínalo con ejercicios en rango de hipertrofia (8-12 repeticiones) para un desarrollo muscular completo.</p>
-              </div>
-              <img src="img/masamuscular.jpg" alt="Ganar masa muscular">
+                <div class="texto-sesion">
+                  <h4>Ganar Masa Muscular</h4>
+                  <ul>
+                    <li>Enfócate en ejercicios compuestos como sentadillas, peso muerto y press de banca. Usa pesos que te permitan hacer pocas repeticiones (6–8).</li>
+                    <li>Los ejercicios compuestos involucran muchos grupos musculares, permitiéndote ganar fuerza muscular y articular.</li>
+                    <li>Además, son ejercicios en los que puedes progresar rápidamente, lo cual te ayudará a motivarte.</li>
+                    <li>El descanso entre series, a diferencia de la creencia popular, debe ser generoso, de entre 2–3 minutos.</li>
+                    <li>Un descanso ineficiente aumenta la fatiga y empeora el rendimiento en el siguiente ejercicio.</li>
+                    <li>Recuerda que el descanso es parte del entrenamiento, y no un tiempo perdido.</li>
+                    <li>Combínalo con ejercicios en rango de hipertrofia (8–12 repeticiones) para un desarrollo muscular completo.</li>
+                    <li>No todos los ejercicios deben ser extenuantes. La sobrecarga progresiva es clave para el crecimiento muscular.</li>
+                    <li>Si no puedes hacer 8 repeticiones, reduce el peso. Si puedes hacer más de 12, aumenta el peso.</li>
+                  </ul>
+                </div>
+                <img src="img/masamuscular.jpg" alt="Ganar masa muscular" />
             </div>
+              
           
-            <div class="sesion-bloque">
-              <div class="texto-sesion">
-                <h4>Bajar de Peso</h4>
-                <p>Además de ejercicios para ganar masa muscular (que ayudará a consumir más calorías), incorpora entrenamiento en circuito (como HIIT).</p>
-                <p>Mantente activo, intenta caminar al menos 10.000 pasos al día.</p>
+              <div class="sesion-bloque">
+                <div class="texto-sesion">
+                  <h4>Pérdida de grasa</h4>
+                  <ul>
+                    <li>Además de ejercicios para ganar masa muscular (que ayudará a consumir más calorías), incorpora entrenamiento en circuito (como HIIT).</li>
+                    <li>Los ejercicios de alta intensidad son ideales para quemar calorías y mejorar la resistencia cardiovascular.</li>
+                    <li>Realiza ejercicios de cuerpo completo, como burpees, saltos y kettlebell swings.</li>    
+                    <li>Mantente activo, intenta caminar al menos 10.000 pasos al día.</li>
+                    <li>Evita largos periodos de sedentarismo, incluso pequeñas caminatas frecuentes ayudan.</li>
+                    <li>Controla tu ingesta calórica y prioriza alimentos ricos en nutrientes, como frutas, verduras y proteínas magras.</li>
+                    <li>Duerme al menos 7-8 horas por noche para mantener tu metabolismo funcionando correctamente.</li>
+                  </ul>
+                </div>
+                <img src="img/perdidapeso.webp" alt="Bajar de peso">
               </div>
-              <img src="img/perdidapeso.webp" alt="Bajar de peso">
-            </div>
+              
           
             <div class="sesion-bloque">
               <div class="texto-sesion">
@@ -88,8 +104,6 @@
             </div>
           </section>
           
-          
-        
           <section id="ejercicios">
             <h2>Ejercicios para cada grupo muscular</h2>
           
@@ -139,8 +153,9 @@
                 <p>Crunch en polea, elevaciones de piernas, plancha.</p>
                 <div class="galeria-ejercicio">
                   <img src="img/abs.jpeg" alt="Abdominales">
-                  <img src="img/abs2.jpg" alt="Abdominales">
                   <img src="img/abs3.jpg" alt="Abdominales">
+                  <img src="img/abs2.jpg" alt="Abdominales">
+                 
                 </div>
               </div>
           
@@ -221,6 +236,36 @@
               </p>
         </section>
 
+        <script>
+            function validarFormulario(event) {
+              event.preventDefault();
+          
+              const nombre = document.getElementById('nombre').value;
+              const email = document.getElementById('correo').value;
+              const mensaje = document.getElementById('mensaje').value;
+              const consulta = document.getElementById('objetivo').value;
+          
+              // Validación básica
+              if (nombre === "" || email === "" || mensaje === "" || consulta === "") {
+                alert("Todos los campos deben ser completados.");
+                return false;
+              }
+          
+              // Validación del correo
+              const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!regexEmail.test(email)) {
+                alert("Introduce un correo electrónico válido.");
+                return false;
+              }
+          
+              // Mostrar mensaje de éxito
+              document.getElementById('mensaje-confirmacion').style.display = 'block';
+              return false;
+            }
+          
+            document.getElementById('formulario').addEventListener('submit', validarFormulario);
+          </script>
+          
       <section id="multimedia">
         <h2>Contenido Multimedia</h2>
         <video width="400" controls autoplay muted>
@@ -228,29 +273,33 @@
           Tu navegador no soporta el elemento de video.
         </video>
       </section>
-
-      <section id="tabla">
-        <h2>Ejemplo de Tabla</h2>
-        <table>
-          <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-          </tr>
-          <tr>
-            <td>Juan</td>
-            <td>25</td>
-          </tr>
-          <tr>
-            <td>María</td>
-            <td>30</td>
-          </tr>
-        </table>
-      </section>
+   
     </main>
 
     <footer>
       <p>&copy; 2025 Demo HTML para Estudiantes</p>
       <button onclick="alert('¡Hola, estudiante!')">Haz clic aquí</button>
     </footer>
+
+    <button id="btnVolverArriba" title="Volver arriba">↑</button>
+    <script>
+        const btnVolverArriba = document.getElementById("btnVolverArriba");
+      
+        window.onscroll = function () {
+          if (document.documentElement.scrollTop > 200) {
+            btnVolverArriba.style.display = "block";
+          } else {
+            btnVolverArriba.style.display = "none";
+          }
+        };
+      
+        btnVolverArriba.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+      
   </body>
 </html>
