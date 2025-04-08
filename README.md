@@ -1,0 +1,1 @@
+Hola! Esta es mi primera página web en HTML combinando CSS y Java Script. Está orientada al mundo del fitness para personas que acaban de iniciarse, siendo una especie de mini guia con datos interesantes. Espero que os guste!
